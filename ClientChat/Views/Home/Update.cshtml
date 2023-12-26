@@ -1,0 +1,32 @@
+﻿@model WebchatSignalr.ViewModel.UserViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Form</title>
+</head>
+<body>
+
+    <h2>User Information Form</h2>
+
+    <form asp-action="Create" method="post">
+        <div>
+            <label asp-for="ID">User ID:</label>
+            <input asp-for="ID" />
+        </div>
+
+        <div>
+            <label asp-for="DisplayName">Display Name:</label>
+            <input asp-for="DisplayName" />
+        </div>
+
+        <div>
+            <label asp-for="Avartar">Avatar URL:</label>
+            <input asp-for="Avartar" />
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
